@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Confirmação Atualização Cadastro";
+}
+
+@if (ViewBag.RegistroAtualizado)
+{
+    <h2>Cadastro atualizado!</h2>
+}
+else
+{
+    <h2>Erro ao atualizar cadastro!</h2>
+}
+<div>
+    @Html.ActionLink("Voltar", "Selecao", "Home")
+</div>

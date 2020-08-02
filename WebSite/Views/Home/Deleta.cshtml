@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Confirmação Exclusão Cadastro";
+}
+
+@if (ViewBag.RegistroExcluido)
+{
+    <h2>Cadastro excluido!</h2>
+}
+else
+{
+    <h2>Erro ao excluir cadastro!</h2>
+}
+<div>
+    @Html.ActionLink("Voltar", "Selecao", "Home")
+</div>

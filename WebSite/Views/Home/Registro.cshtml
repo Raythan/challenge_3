@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Confirmação Cadastro";
+}
+
+@if (ViewBag.RegistroEfetuado)
+{
+    <h2>Cadastro Registrado!</h2>
+}
+else
+{
+    <h2>Erro ao efetuar cadastro!</h2>
+}
+<div>
+    @Html.ActionLink("Voltar", "Selecao", "Home")
+</div>
+

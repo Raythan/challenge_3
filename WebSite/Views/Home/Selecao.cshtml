@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Página de seleção.";
+}
+
+<h2>Selecione um evento</h2>
+@Html.AntiForgeryToken()
+<div>
+    @Html.ActionLink("Buscar", "Buscar", "Home", new { @class = "btn btn-primary" })
+    @Html.ActionLink("Registrar", "Registrar", "Home", new { @class = "btn btn-success" })
+    @Html.ActionLink("Atualizar", "Atualizar", "Home", new { @class = "btn btn-warning" })
+    @Html.ActionLink("Deletar", "Deletar", "Home", new { @class = "btn btn-danger" })
+    @Html.ActionLink("Deslogar", "Deslogar", "Home", new { @class = "btn btn-info" })
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

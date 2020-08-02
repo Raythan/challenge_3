@@ -1,0 +1,79 @@
+﻿@model WebSite.Models.Cadastro
+
+@{
+    ViewBag.Title = "Busca de cadastro";
+}
+
+<h2>Busca</h2>
+
+@if (Model != null)
+{
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.NOME)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NOME)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.GENERO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.GENERO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EMAIL)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EMAIL)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DATANASCIMENTO)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DATANASCIMENTO)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NATURALIDADE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NATURALIDADE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NACIONALIDADE)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NACIONALIDADE)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CPF)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CPF)
+            </dd>
+
+        </dl>
+    </div>
+}
+else
+{
+    <h3>Cadastro não localizado</h3>
+}
+<div>
+    @Html.ActionLink("Voltar", "Selecao", "Home")
+</div>
